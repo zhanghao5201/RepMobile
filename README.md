@@ -131,15 +131,16 @@ cd segmentation
 ## Main Results
 
 ### **Classification on ImageNet-1K**
-|      name      | resolution | acc@1 | #param | FLOPs |                                                                             download                                                                              |
-| :------------: | :----------: | :--------: | :---: | :----: | :---: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| RepMobile_S  |  224x224   | 77.2  |  5.7M   |  0.4G   |       [ckpt](https://drive.google.com/file/d/1g8G_JO-E4Af9iOUG_alU-jXkKciuuMtu/view?usp=sharing) | 
-| RepMobile_M  |  224x224   | 78.8  |  8.2M   |  0.7G   |       [ckpt](https://drive.google.com/file/d/1dHWQhtTfIsr1m06_JQdzF39rpwArCYDp/view?usp=sharing) |
-| RepMobile_L  |  224x224   | 80.9  |  18.4M  |  1.4G  |       [ckpt](https://drive.google.com/file/d/11N90R37HQ-aZDVvkozDAfuYURUFGUDGh/view?usp=sharing) |
+|      name      | resolution | acc@1 | #param | FLOPs | download |
+| :------------: | :--------: | :---: | :----: | :---: | :------: |
+| RepMobile_S    | 224×224    | 77.2  |  5.7M  | 0.4G  | [ckpt](https://drive.google.com/file/d/1g8G_JO-E4Af9iOUG_alU-jXkKciuuMtu/view?usp=sharing) |
+| RepMobile_M    | 224×224    | 78.8  |  8.2M  | 0.7G  | [ckpt](https://drive.google.com/file/d/1dHWQhtTfIsr1m06_JQdzF39rpwArCYDp/view?usp=sharing) |
+| RepMobile_L    | 224×224    | 80.9  | 18.4M  | 1.4G  | [ckpt](https://drive.google.com/file/d/11N90R37HQ-aZDVvkozDAfuYURUFGUDGh/view?usp=sharing) |
+
 
 ### **Object Detection and Instance Segmentation on COCO**
-| Model                   | $AP^b$ | $AP_{50}^b$ | $AP_{75}^b$ | $AP^m$ | $AP_{50}^m$ | $AP_{75}^m$ | Ckpt |
-|:---------------|:----:|:---:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| Model | $AP^b$ | $AP_{50}^b$ | $AP_{75}^b$ | $AP^m$ | $AP_{50}^m$ | $AP_{75}^m$ | Ckpt |
+|:---------------|:----:|:---:|:--:|:--:|:--:|:--:|:--:|
 | RepMobile_S | 39.8  |  61.9   | 43.5  |    37.2    |  58.8      |  40.1        |   [ckpt](https://github.com/THU-MIG/RepViT/releases/download/v1.0/repvit_m1_1_coco.pth)   |
 | RepMobile_L | 41.6   | 63.2   | 45.3  | 38.6   | 60.5        | 41.5         |   [ckpt](https://github.com/THU-MIG/RepViT/releases/download/v1.0/repvit_m1_5_coco.pth)   |
 
