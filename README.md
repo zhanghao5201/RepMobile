@@ -148,7 +148,7 @@ cd segmentation
 ### **Semantic Segmentation on ADE20K**
 | Model | mIoU | Ckpt |
 |:---------------|:----:|:--:|
-| RepMobile_L |   42.2   |   [ckpt](https://github.com/THU-MIG/RepViT/releases/download/v1.0/repvit_m1_1_ade20k.pth)   |
+| RepMobile_L |   42.2   |   [ckpt](https://drive.google.com/file/d/1mc_a_DpsazSkjwqChttemyMXyN_yrLbg/view?usp=sharing)   |
 
 
 ## Acknowledgement
