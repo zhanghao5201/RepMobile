@@ -13,9 +13,7 @@ Subsequent MetaFormer-style reparameterizable architectures like FastViT and Rep
 Our analysis of ResNet and RepVGG points out a key limitation in current VGG-style models: imperfect identity mapping impedes effective training in deeper configurations. 
 To address this, we investigate strategies for better preserving identity mapping in efficient reparameterizable networks, proposing three design principles centered on normalization, downsampling, and the activation function. 
 By systematically adapting a classical MobileNet architecture to adhere to these principles, we introduce RepMobile, a novel deep mobile VGG-style Convolutional Neural Network (CNN). 
-Extensive experiments show that RepMobile achieves performance comparable to state-of-the-art lightweight CNNs and Vision Transformers. 
-Specifically, RepMobile-S outperforms EfficientFormerV2-S0 by 1.5\% in Top-1 accuracy while delivering approximately 7X faster inference. 
-Moreover, RepMobile-M runs 10X faster than RepViT-M0.9 while maintaining competitive accuracy. 
+Extensive experiments demonstrate that RepMobile delivers competitive accuracy compared to state-of-the-art lightweight CNNs and Vision Transformers, while significantly improving inference efficiency. In particular, RepMobile-S surpasses EfficientFormerV2-S0 by 1.5\% in Top-1 accuracy with much faster inference. Likewise, RepMobile-M achieves notably better efficiency than RepViT-M0.9, without compromising accuracy.
 
 ## Getting Started
 The steps to create env, train and evaluate RepMobile models：
@@ -121,7 +119,7 @@ cd detection
 cd segmentation
 ###Trainig
 
-# sh tools/dist_train.sh gvembodied repseg3 configs/sem_fpn/fpn_repmobile_large_ade20k_40k.py 8 20233 work_dirs/fpn_repmobile_large_ade20k_40k/latest.pth
+# sh tools/dist_train.sh XXX repseg3 configs/sem_fpn/fpn_repmobile_large_ade20k_40k.py 8 20233 work_dirs/fpn_repmobile_large_ade20k_40k/latest.pth
 
 ###Testing
 # sh tools/dist_test.sh XXX repseg1 configs/sem_fpn/fpn_repmobile_large_ade20k_40k.py 1 21232 XXX/iter_40000.pth
@@ -141,8 +139,8 @@ cd segmentation
 ### **Object Detection and Instance Segmentation on COCO**
 | Model | $AP^b$ | $AP_{50}^b$ | $AP_{75}^b$ | $AP^m$ | $AP_{50}^m$ | $AP_{75}^m$ | Ckpt |
 |:---------------|:----:|:---:|:--:|:--:|:--:|:--:|:--:|
-| RepMobile_S | 39.8  |  61.9   | 43.5  |    37.2    |  58.8      |  40.1        |   [ckpt](https://github.com/THU-MIG/RepViT/releases/download/v1.0/repvit_m1_1_coco.pth)   |
-| RepMobile_L | 41.6   | 63.2   | 45.3  | 38.6   | 60.5        | 41.5         |   [ckpt](https://github.com/THU-MIG/RepViT/releases/download/v1.0/repvit_m1_5_coco.pth)   |
+| RepMobile_S | 37.3  |  59.3   | 40.2  |    35.0    |  56.3      |  36.9        |   ckpt   |
+| RepMobile_L | 41.5   | 63.2   | 45.1  | 37.9   | 59.9        | 40.5         |   [ckpt](https://drive.google.com/file/d/1fL4RoNP_QbKU8AVr-GHKEu9-3hFeoNEh/view?usp=sharing)   |
 
 
 ### **Semantic Segmentation on ADE20K**
